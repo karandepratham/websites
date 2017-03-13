@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Bootstrap Theme The Band</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+   <!--link to awesome Bootstrap css -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
+  <!--link to beautiful icons css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <!--link to customized css file		-Author: Prathamesh Karande -->
+  <link rel="stylesheet" type="text/css" href="css\bandhanmukhwas.css">
+  
+  <!--link to fantastic JQuery js sfile -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  
+  <!--link to awesome bootstrap Javascript file -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  
+  
+  
+  <style>
+  body {
+      font: 400 15px/1.8 Lato, sans-serif;
+      color: #777;
+  }
+  h3, h4 {
+      margin: 10px 0 30px 0;
+      letter-spacing: 10px;      
+      font-size: 20px;
+      color: #111;
+  }
+  .container {
+      padding: 50px 50px;
+  }
+  .person {
+      border: 10px solid transparent;
+      margin-bottom: 25px;
+      width: 80%;
+      height: 80%;
+      opacity: 0.7;
+  }
+  .person:hover {
+      border-color: #f1f1f1;
+  }
+  .carousel-inner img {
+      -webkit-filter: grayscale(10%);
+      filter: grayscale(10%); /* make all photos black and white */ 
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+  }
+  .carousel-caption h3 {
+      color: #fff !important;
+  }
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+  .bg-1 {
+      background: #2d2d30;
+      color: #bdbdbd;
+  }
+  .bg-1 h3 {color: #fff;}
+  .bg-1 p {font-style: italic;}
+  .list-group-item:first-child {
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+  }
+  .list-group-item:last-child {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail p {
+      margin-top: 15px;
+      color: #555;
+  }
+  .btn {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #f1f1f1;
+      border-radius: 0;
+      transition: .2s;
+  }
+  .btn:hover, .btn:focus {
+      border: 1px solid #333;
+      background-color: #fff;
+      color: #000;
+  }
+  .modal-header, h4, .close {
+      background-color: #333;
+      color: #fff !important;
+      text-align: center;
+      font-size: 30px;
+  }
+  .modal-header, .modal-body {
+      padding: 40px 50px;
+  }
+  .nav-tabs li a {
+      color: #777;
+  }
+  #googleMap {
+      width: 100%;
+      height: 400px;
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+  }  
+  .navbar {
+      font-family: Montserrat, sans-serif;
+      margin-bottom: 0;
+      background-color: #2d2d30;
+      border: 0;
+      font-size: 11px !important;
+      letter-spacing: 4px;
+      opacity: 0.9;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+      color: #d5d5d5 !important;
+  }
+  .navbar-nav li a:hover {
+      color: #fff !important;
+  }
+  .navbar-nav li.active a {
+      color: #fff !important;
+      background-color: #29292c !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+  }
+  .open .dropdown-toggle {
+      color: #fff;
+      background-color: #555 !important;
+  }
+  .dropdown-menu li a {
+      color: #000 !important;
+  }
+  .dropdown-menu li a:hover {
+      background-color: red !important;
+  }
+  footer {
+      background-color: #2d2d30;
+      color: #f5f5f5;
+      padding: 32px;
+  }
+  footer a {
+      color: #f5f5f5;
+  }
+  footer a:hover {
+      color: #777;
+      text-decoration: none;
+  }  
+  .form-control {
+      border-radius: 0;
+  }
+  textarea {
+      resize: none;
+  }
+  
+  .textformat1
+  {
+	
+  }
+  </style>
+  
+  
+</head>
+
+<!-- Container (Navbar Section) -->
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#myPage">
+		<a class="navbar-brand" href="#">
+			<img src="img\logo\BandhanLogo.png" class="img-rounded img-responsive brandlogo" alt="BandhanMukhwas Logo" width="100" height="50">
+		</a>	  
+	  </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+			<li class="active li_spc"><a href="index.html">HOME</a></li>
+			
+			<li class="li_spc"><a href="documents\Brochure_Document_Bandhan Mukhwas.com.pdf" target="_blank" >BROCHURE</a></li>
+			
+			<li class="li_spc"><a href="#aboutUS">ABOUT US</a></li>
+			<li class="li_spc"><a href="#products">PRODUCTS</a></li>
+			
+        <li class="dropdown">
+          <a class="dropdown-toggle li_spc" data-toggle="dropdown" href="#">PRODUCTS CATEGORY
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="php\productdetailsbycategories_1.php?ProductCategory=MouthFreshner" target="_blank">Mouth Freshner</a></li>
+			<li><a href="php\productdetailsbycategories_1.php?ProductCategory=Digestive" target="_blank">Digestive</a></li>
+			<li><a href="productdetailsbycategories.php?ProductCategory=Sachets" target="_blank">Sachets</a></li>
+			<li><a href="#">Box Packs</a></li>
+			<li><a href="#">Confectioneries</a></li>
+			<li><a href="#">Gift Packs</a></li>
+          </ul>
+        </li>
+        <li class="li_spc"><a href="#contact">CONTACT US</li></a></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Container (Carousal Section) -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+	  <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+	
+		<div class="item active">
+			<img src="img\carousel\carousel1_image1.jpg" alt="RED">
+			<div class="carousel-caption">
+				<h3>Red Mukhwas</h3>
+				<p>It melts in your mouth and gives a blast of flavours</p>
+			</div>      
+		</div>	
+
+      <div class="item">
+        <img src="img\carousel\carousel1_image3.jpg" alt="Green">
+        <div class="carousel-caption">
+          <h3>Green Mukhwas</h3>
+          <p>It personally love this flavour</p>
+        </div>      
+      </div>
+    
+      <div class="item">
+        <img src="img\carousel\carousel1_image2.jpg" alt="VIOLET">
+        <div class="carousel-caption">
+          <h3>Ayurvedic Mukhwas</h3>
+          <p>Healthy an nice and it is good for eyesight</p>
+        </div>      
+      </div>
+	  
+	  <div class="item">
+        <img src="img\carousel\carousel1_image4.jpg" alt="BLUE">
+        <div class="carousel-caption">
+          <h3>Chilli</h3>
+          <p>i love hot chilli sauce</p>
+        </div>      
+      </div>
+	  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<p id="products"></p>
+<!-- Container (Products Section) -->
+<div id="tour" class="bg-1">
+  <div class="container">
+    <h3 class="text-center">Products</h3>
+        
+    <div class="row text-center">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="img\products\Ayurvedic Mukhwas.jpg" alt="Paris" width="400" height="300">
+          <p><strong>Ayurvedic Mukhwas</strong></p>
+		  <p>soufn,sugar coated,mint</p>
+          <button class="btn">Buy @ 100</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="img\products\Mint Mukhwas.jpg" alt="Mint Mukhwas" width="400" height="300">
+		  <p><strong>Mint Mukhwas</strong></p>
+		  <p>sugar coated,mint</p>
+          <button class="btn">Buy @ 100</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="img\products\Green Mukhwas.jpg" alt="Green Mukhwas" width="400" height="300">
+          <p><strong>Green Mukhwas</strong></p>
+		  <p>Green sugar coated,mint</p>
+          <button class="btn">Buy @ 100</button>
+        </div>
+      </div>
+    </div>
+     
+    <div class="row text-center">
+	<div class="col-sm-2"></div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="img\products\Crispy Cool Mukhwas.jpg" alt="Paris" width="400" height="300">
+          <p><strong>Crispy Cool Mukhwas</strong></p>
+		  <p>soufn,sugar coated,mint</p>
+          <button class="btn">Buy @ 100</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="img\products\Tooty Fruity Mukhwas.jpg" alt="Mint Mukhwas" width="400" height="300">
+		  <p><strong>Tooty Fruity  Mukhwas</strong></p>
+		  <p>sugar coated,mint</p>
+          <button class="btn">Buy @ 100</button>
+        </div>
+      </div>
+	  <div class="col-sm-2"></div>
+    </div>
+  </div>
+
+</div>
+
+
+<p id="aboutUS"></p>
+<br>
+<br>
+<!-- Container (The About US Section) -->
+<div class="container text-center">
+  <h3>Bandhan Mukhwas</h3>
+  <p><em>Yeh hai pyaar ka bandhan</em></p>
+  <p class="textformat1">We are renowned manufacturer and exporter of a wide variety of Indian sweets and farsans. In addition, we also offer our clients a wide assortment of mouth fresheners, suparis, digestive golis, dry fruits and chocolates. Our whole range encompasses dry fruits, special designer indian sweets, sugar free indian sweets, popular range of indian sweets, dry fruit presentation boxes, dry fruit in metal boxes & trays, dry snacks, sweet boxes, healthy food snacks, dry fruit boxes, popular indian sweets, dry fruit chocolates, mukhwas / savouries (mouth freshners), mukhwas / savouries (suparis) and mukhwas / savouries (digestive golis). Processed using pure desi ghee and other natural ingredients, these are delicious in taste, highly nutritious, available in various flavors and are adulteration free. In order to retain their original nutritional value, we prepare them under hygienic conditions and package them utilizing pet cans.  In addition, we also provide our clients with customized solutions and packaging of consignments as per their specifications and requirements.
+</p>  
+<p>We also retail our products through our retail outlets at Flora Fountain and many of the leading outlets in Mumbai as well. </p>
+
+<p>For over a decade, we have given our clients the assurance of the best quality product and delivery of consignments on time; and will continue to do the same. Our company offers to its esteemed clients, customization of products and packaging as per their specifications. 
+
+We source desi ghee and other natural ingredients from the best vendors of the country. Our company ensures that the entire process of production is carried out under the set standards of safety, hygiene and quality control. We have been able to maintain high profile clients based across the globe due to our strict adherence to quality control measures. 
+
+We are assisted by a team of quality inspectors, who test our range on certain parameters. These include: 
+
+Hygiene
+Nutritional value
+Packaging
+Ingredient percentage
+Calorie count
+Freshness and purity
+</p>
+</div>
+
+<!-- Container (Contact US Section) -->	
+<div id="contact" class="container">
+<h2>CONTACT US</h2>
+	<div class="row">
+		<!--section1 Address-->
+		<div class="col-md-4">			
+			
+			<p>Office Address :</p>
+			<p><h5>Aditya Kichambare</h5></p>
+			<p>Office - 7,Radha Apt, Barrage Road, Kulgaon Badlapur(W),	District:-Thane, Pin:-421503</p>
+			<p><span class="glyphicon glyphicon-map-marker"></span>Mumbai, India</p>
+			<p><span class="glyphicon glyphicon-envelope"></span>Email: venkatfoods@gmail.com</p>
+			<p><span class="glyphicon glyphicon-phone"></span>Phone: +91 9326663876</p>
+		</div> 
+		
+		<!--section2 Form-->
+		<div class="col-md-8">
+		<form  method="post">
+		<p>Dealership Enquiry? Drop a note or Call us</p><br>
+			<div class="row">			
+				<div class="col-sm-4 form-group">					
+					<input class="form-control" id="cf_name" name="cf_name" placeholder="Name" type="text" required>
+				</div>				
+				
+				<div class="col-sm-4 form-group">					
+					<input class="form-control" id="cf_email" name="cf_email" placeholder="Email" type="email" required>
+				</div>
+				
+				<div class="col-sm-4 form-group">					
+					<input class="form-control" id="cf_mobileno" name="cf_mobileno" placeholder="Mobile no" type="number" length="10" required>
+				</div>
+			</div>
+			<textarea class="form-control input-group" id="cf_message" name="cf_message" placeholder="Message" rows="4" required></textarea>
+			
+			
+			<div class="row">
+				<div class="col-md-12 form-group">
+					<button class="btn pull-right" id="submit" type="button" value="submit">Send</button>
+				</div>
+			</div>
+		</form>			
+		</div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer-social text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  
+  <p>Follow us on</p>   
+  
+			<ul class="list-inline">
+				
+				<li class="social-twitter">
+					<a target="_blank" href="https://www.twitter.com/bandhanmukhwas">
+					<i class="fa fa-twitter fa-3x"></i></a>
+				</li><li>----------------</li>
+				
+				<li class="social-facebook">
+					<a target="_blank" href="https://www.facebook.com/bandhanmukhwasIndia/">
+					<i class="fa fa-facebook fa-3x"></i></a>
+				</li><li>----------------</li>
+				
+				<li class="social-google-plus">
+					<a target="_blank" href="https://plus.google.com/+Startbootstrap">
+					<i class="fa fa-google-plus fa-3x"></i></a>
+				</li><li>----------------</li>
+				
+				<li class="social-pinterest">
+					<a target="_blank" href="https://www.pinterest.com/bandhanmukhwas/">
+					<i class="fa fa-pinterest fa-3x"></i></a>
+				</li>
+				
+			</ul>
+	
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip(); 
+  
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+
+<script>
+	$(document).ready(function(){
+	$("#submit").click(function(){
+	var name = $("#cf_name").val();
+	var email = $("#cf_email").val();
+	var message = $("#cf_message").val();
+	var mobileno = $("#cf_mobileno").val();
+	// Returns successful data submission message when the entered information is stored in database.
+	var dataString = '&cf_name='+ name + '&cf_email='+ email + '&cf_message='+ message + '&cf_mobileno='+ mobileno;
+	if(name==''||email==''||message==''||mobileno=='')
+	{
+	alert("Please Fill All Fields");
+	}
+	else
+	{
+	// AJAX Code To Submit Form.
+	$.ajax({
+	type: "POST",
+	url: "contactform.php",
+	data: dataString,
+	cache: false,
+	success: function(result){
+	alert(result);
+	}
+	});
+	}
+	return false;
+	});
+	});	
+</script>
+
+</body>
+</html>
